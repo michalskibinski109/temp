@@ -4,36 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom starosci</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Wirtualna ostoja seniora</a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Strona domowa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">cennik</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container container-fluid">
-      <h1 class="display-4 text-center my-5">Wirtualna ostoja seniora</h1>
       <div class="col-lg-12 mx-0 px-0">
         <div class="progress">
-          <div
-            aria-valuemax="100"
-            aria-valuemin="0"
-            aria-valuenow="50"
-            class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
-            role="progressbar"
-            style="width: 0%"
-          ></div>
+          <div aria-valuemax="100"
+               aria-valuemin="0"
+               aria-valuenow="50"
+               class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+               role="progressbar"
+               style="width: 0%"></div>
         </div>
         <div id="qbox-container">
-          <form
-            class="needs-validation"
-            id="form-wrapper"
-            method="post"
-            name="form-wrapper"
-            novalidate=""
-          >
+          <form class="needs-validation"
+                id="form-wrapper"
+                method="post"
+                name="form-wrapper"
+                novalidate="">
             <div id="steps-container">
               <div class="step">
                 <h4>
@@ -42,31 +62,21 @@
                 </h4>
                 <div class="form-check ps-0 q-box">
                   <div class="q-box__question">
-                    <input
-                      class="form-check-input question__input"
-                      id="q_1_yes"
-                      name="q_1"
-                      type="radio"
-                      value="Yes"
-                    />
-                    <label
-                      class="form-check-label question__label"
-                      for="q_1_yes"
-                      >Osoba starsza</label
-                    >
+                    <input class="form-check-input question__input"
+                           id="q_1_yes"
+                           name="q_1"
+                           type="radio"
+                           value="Yes" />
+                    <label class="form-check-label question__label" for="q_1_yes">Osoba starsza</label>
                   </div>
                   <div class="q-box__question">
-                    <input
-                      checked
-                      class="form-check-input question__input"
-                      id="q_1_no"
-                      name="q_1"
-                      type="radio"
-                      value="No"
-                    />
-                    <label class="form-check-label question__label" for="q_1_no"
-                      >Opiekun</label
-                    >
+                    <input checked
+                           class="form-check-input question__input"
+                           id="q_1_no"
+                           name="q_1"
+                           type="radio"
+                           value="No" />
+                    <label class="form-check-label question__label" for="q_1_no">Opiekun</label>
                   </div>
                 </div>
               </div>
@@ -74,260 +84,146 @@
                 <h4>Czy masz trudności z poruszaniem się?</h4>
                 <div class="form-check ps-0 q-box">
                   <div class="q-box__question">
-                    <input
-                      class="form-check-input question__input"
-                      id="q_2_yes"
-                      name="q_2"
-                      type="radio"
-                      value="Yes"
-                    />
-                    <label
-                      class="form-check-label question__label"
-                      for="q_2_yes"
-                      >Tak</label
-                    >
+                    <input class="form-check-input question__input"
+                           id="q_2_yes"
+                           name="q_2"
+                           type="radio"
+                           value="Yes" />
+                    <label class="form-check-label question__label" for="q_2_yes">Tak</label>
                   </div>
                   <div class="q-box__question">
-                    <input
-                      checked
-                      class="form-check-input question__input"
-                      id="q_2_no"
-                      name="q_2"
-                      type="radio"
-                      value="No"
-                    />
-                    <label class="form-check-label question__label" for="q_2_no"
-                      >Nie</label
-                    >
+                    <input checked
+                           class="form-check-input question__input"
+                           id="q_2_no"
+                           name="q_2"
+                           type="radio"
+                           value="No" />
+                    <label class="form-check-label question__label" for="q_2_no">Nie</label>
                   </div>
                 </div>
               </div>
               <div class="step">
-                <h4>
-                  Czy gdybyś miał taką możliwość, chciałyś jeszcze "poszaleć"?
-                </h4>
+                <h4>W jakim środowisku wolałbyś się znajdowac?</h4>
                 <div class="form-check ps-0 q-box">
                   <div class="q-box__question">
-                    <input
-                      class="form-check-input question__input"
-                      id="q_3_yes"
-                      name="q_3"
-                      type="radio"
-                      value="Yes"
-                    />
-                    <label
-                      class="form-check-label question__label"
-                      for="q_3_yes"
-                      >Pewnie</label
-                    >
+                    <input class="form-check-input question__input"
+                           id="q_3_yes"
+                           name="q_3"
+                           type="radio"
+                           value="Yes" />
+                    <label class="form-check-label question__label" for="q_3_yes">W domowym, nie chce niczego zmieniac</label>
                   </div>
                   <div class="q-box__question">
-                    <input
-                      checked
-                      class="form-check-input question__input"
-                      id="q_3_no"
-                      name="q_3"
-                      type="radio"
-                      value="No"
-                    />
-                    <label class="form-check-label question__label" for="q_3_no"
-                      >Raczej nie</label
-                    >
+                    <input checked
+                           class="form-check-input question__input"
+                           id="q_3_no"
+                           name="q_3"
+                           type="radio"
+                           value="No" />
+                    <label class="form-check-label question__label" for="q_3_no">Chciałbym spróbowac czegoś nowego</label>
                   </div>
                 </div>
               </div>
               <div class="step">
-                <h4>Czego oczekujesz od domu starości?</h4>
+                <h4>Jakie aktywności cię interesują</h4>
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="form-check ps-0 q-box">
                       <div class="q-box__question">
-                        <input
-                          class="form-check-input question__input q-checkbox"
-                          id="q_4_uk"
-                          name="q_4"
-                          type="checkbox"
-                          value="uk"
-                        />
-                        <label
-                          class="form-check-label question__label"
-                          for="q_4_uk"
-                          >Pełnej analogowości</label
-                        >
+                        <input class="form-check-input question__input q-checkbox"
+                               id="q_4_uk"
+                               name="q_4"
+                               type="checkbox"
+                               value="uk" />
+                        <label class="form-check-label question__label" for="q_4_uk">Podróż po zoo ze zwierzętami z całego świata</label>
                       </div>
                     </div>
                     <div class="form-check ps-0 q-box">
                       <div class="q-box__question">
-                        <input
-                          class="form-check-input question__input"
-                          id="q_4_us"
-                          name="q_4"
-                          type="checkbox"
-                          value="us"
-                        />
-                        <label
-                          class="form-check-label question__label"
-                          for="q_4_us"
-                          >Wirtualnej rzeczywistości</label
-                        >
+                        <input class="form-check-input question__input"
+                               id="q_4_us"
+                               name="q_4"
+                               type="checkbox"
+                               value="us" />
+                        <label class="form-check-label question__label" for="q_4_us">Wycieczki po najciekawszych miejscach na świecie</label>
                       </div>
                     </div>
                     <div class="form-check ps-0 q-box">
                       <div class="q-box__question">
-                        <input
-                          class="form-check-input question__input"
-                          id="q_4_br"
-                          name="q_3"
-                          type="checkbox"
-                          value="br"
-                        />
-                        <label
-                          class="form-check-label question__label"
-                          for="q_4_br"
-                          >Brazil</label
-                        >
+                        <input class="form-check-input question__input"
+                               id="q_4_br"
+                               name="q_3"
+                               type="checkbox"
+                               value="br" />
+                        <label class="form-check-label question__label" for="q_4_br">Warsztaty naukowe</label>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-check ps-0 q-box">
                       <div class="q-box__question">
-                        <input
-                          class="form-check-input question__input"
-                          id="q_4_de"
-                          name="q_4"
-                          type="checkbox"
-                          value="de"
-                        />
-                        <label
-                          class="form-check-label question__label"
-                          for="q_4_de"
-                          >Germany</label
-                        >
+                        <input class="form-check-input question__input"
+                               id="q_4_de"
+                               name="q_4"
+                               type="checkbox"
+                               value="de" />
+                        <label class="form-check-label question__label" for="q_4_de">warsztaty przyrodnicze</label>
                       </div>
                     </div>
                     <div class="form-check ps-0 q-box">
                       <div class="q-box__question">
-                        <input
-                          class="form-check-input question__input"
-                          id="q_4_in"
-                          name="q_4"
-                          type="checkbox"
-                          value="in"
-                        />
-                        <label
-                          class="form-check-label question__label"
-                          for="q_4_in"
-                          >India</label
-                        >
+                        <input class="form-check-input question__input"
+                               id="q_4_in"
+                               name="q_4"
+                               type="checkbox"
+                               value="in" />
+                        <label class="form-check-label question__label" for="q_4_in">warsztaty kulinarne</label>
                       </div>
                     </div>
                     <div class="form-check ps-0 q-box">
                       <div class="q-box__question">
-                        <input
-                          class="form-check-input question__input"
-                          id="q_4_eu"
-                          name="q_4"
-                          type="checkbox"
-                          value="eu"
-                        />
-                        <label
-                          class="form-check-label question__label"
-                          for="q_4_eu"
-                          >Europe</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-check ps-0 q-box">
-                      <div class="q-box__question">
-                        <input
-                          class="form-check-input question__input"
-                          id="q_4_none"
-                          name="q_4"
-                          type="checkbox"
-                          value="none"
-                        />
-                        <label
-                          class="form-check-label question__label"
-                          for="q_4_none"
-                          >I did not travelled to any of these countries</label
-                        >
+                        <input class="form-check-input question__input"
+                               id="q_4_eu"
+                               name="q_4"
+                               type="checkbox"
+                               value="eu" />
+                        <label class="form-check-label question__label" for="q_4_eu">Poznawanie osób w tym samym wieku z całego świata</label>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="step">
-                <h4>
-                  Are you experiencing any of these serious symptoms of COVID-19
-                  below?
-                </h4>
+                <h4>Czy jesteś gotów na skorzystanie z innowacyjnych metod leczenia jeśli zajdzie taka potrzeba?</h4>
                 <div class="row">
                   <div class="form-check ps-0 q-box">
                     <div class="q-box__question">
-                      <input
-                        class="form-check-input question__input"
-                        id="q_5_breathing"
-                        name="q_5_breathing"
-                        type="checkbox"
-                        value="breathing"
-                      />
-                      <label
-                        class="form-check-label question__label"
-                        for="q_5_breathing"
-                        >Difficulty breathing or shortness of breath</label
-                      >
+                      <input class="form-check-input question__input"
+                             id="q_5_breathing"
+                             name="q_5_breathing"
+                             type="checkbox"
+                             value="breathing" />
+                      <label class="form-check-label question__label" for="q_5_breathing">Tak</label>
                     </div>
                   </div>
                   <div class="form-check ps-0 q-box">
                     <div class="q-box__question">
-                      <input
-                        class="form-check-input question__input"
-                        id="q_5_chest"
-                        name="q_5_chest"
-                        type="checkbox"
-                        value="chest pain"
-                      />
-                      <label
-                        class="form-check-label question__label"
-                        for="q_5_chest"
-                        >Chest pain or pressure</label
-                      >
+                      <input class="form-check-input question__input"
+                             id="q_5_chest"
+                             name="q_5_chest"
+                             type="checkbox"
+                             value="chest pain" />
+                      <label class="form-check-label question__label" for="q_5_chest">Częściowo</label>
                     </div>
                   </div>
                   <div class="form-check ps-0 q-box">
                     <div class="q-box__question">
-                      <input
-                        class="form-check-input question__input"
-                        id="q_5_speech"
-                        name="q_5_speech"
-                        type="checkbox"
-                        value="speech problem"
-                      />
-                      <label
-                        class="form-check-label question__label"
-                        for="q_5_speech"
-                        >Loss of speech or movement</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-check ps-0 q-box">
-                    <div class="q-box__question">
-                      <input
-                        class="form-check-input question__input"
-                        id="q_5_pale"
-                        name="q_5_pale"
-                        type="checkbox"
-                        value="pale"
-                      />
-                      <label
-                        class="form-check-label question__label"
-                        for="q_5_pale"
-                        >Pale, gray or blue-colored skin, lips or nail
-                        beds</label
-                      >
+                      <input class="form-check-input question__input"
+                             id="q_5_speech"
+                             name="q_5_speech"
+                             type="checkbox"
+                             value="speech problem" />
+                      <label class="form-check-label question__label" for="q_5_speech">Nie</label>
                     </div>
                   </div>
                 </div>
@@ -340,78 +236,39 @@
                 </h4>
                 <div class="mt-1">
                   <label class="form-label">Imię:</label>
-                  <input
-                    class="form-control"
-                    id="full_name"
-                    name="full_name"
-                    type="text"
-                  />
+                  <input class="form-control" id="full_name" name="full_name" type="text" />
                 </div>
                 <div class="mt-2">
                   <label class="form-label">Adres:</label>
-                  <input
-                    class="form-control"
-                    id="address"
-                    name="address"
-                    type="text"
-                  />
+                  <input class="form-control" id="address" name="address" type="text" />
                 </div>
                 <div class="mt-2">
                   <label class="form-label">Email:</label>
-                  <input
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    type="email"
-                  />
+                  <input class="form-control" id="email" name="email" type="email" />
                 </div>
                 <div class="mt-2">
                   <label class="form-label">telefon:</label>
-                  <input
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    type="text"
-                  />
+                  <input class="form-control" id="phone" name="phone" type="text" />
                 </div>
                 <div class="row mt-2">
                   <div class="col-lg-2 col-md-2 col-3">
                     <label class="form-label">Wiek</label>
                     <div class="input-container">
-                      <input
-                        class="form-control"
-                        id="age"
-                        name="age"
-                        type="text"
-                      />
+                      <input class="form-control" id="age" name="age" type="text" />
                     </div>
                   </div>
                   <div class="col-lg-8">
                     <div id="input-container">
-                      <input
-                        class="form-check-input"
-                        name="gender"
-                        type="radio"
-                        value="male"
-                      />
+                      <input class="form-check-input" name="gender" type="radio" value="male" />
                       <label class="form-check-label radio-lb">Mężczyzna</label>
-                      <input
-                        class="form-check-input"
-                        name="gender"
-                        type="radio"
-                        value="female"
-                      />
+                      <input class="form-check-input" name="gender" type="radio" value="female" />
                       <label class="form-check-label radio-lb">Kobieta</label>
-                      <input
-                        checked
-                        class="form-check-input"
-                        name="gender"
-                        type="radio"
-                        value="undefined"
-                      />
-                      <label class="form-check-label radio-lb"
-                        >inne</label
-                      >
+                      <input checked
+                             class="form-check-input"
+                             name="gender"
+                             type="radio"
+                             value="undefined" />
+                      <label class="form-check-label radio-lb">inne</label>
                     </div>
                   </div>
                 </div>
@@ -419,11 +276,23 @@
               <div class="step">
                 <div class="mt-1">
                   <div class="closing-text">
-                    <h4>To wszystko!</h4>
-                    <p>
-                      Mamy dla ciebie świetną ofertę
-                    </p>
-                    <p>Click on the submit button to continue.</p>
+                    <h4 class="display-2">Gratulacje</h4>
+                    <p>Nasz zespół przygotował dla ciebie świetną ofertę</p>
+                    <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Nasza spersonalizowana oferta</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">30 bitcointow miesiecznie</h6>
+                        <p class="card-text">
+                          <ul>
+                            <li>Wirtualne warsztaty</li>
+                            <li>Siłownia</li>
+                            <li>Innowacyjne leczenie</li>
+                            <li>Networking</li>
+                          </ul>
+                        </p>
+                        <a href="/offer.html" class="card-link btn btn-primary w-100">Zamawiam!</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -441,9 +310,9 @@
               </div>
             </div>
             <div id="q-box__buttons">
-              <button id="prev-btn" type="button">Previous</button>
-              <button id="next-btn" type="button">Next</button>
-              <button id="submit-btn" type="submit">Submit</button>
+              <button id="prev-btn" type="button">Wstecz</button>
+              <button id="next-btn" type="button">Dalej</button>
+              <button id="submit-btn" type="submit">Zgłoś</button>
             </div>
           </form>
         </div>
@@ -455,11 +324,8 @@
       </div>
     </div>
   </body>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+          crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </html>
