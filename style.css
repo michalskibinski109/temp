@@ -52,8 +52,19 @@ label {
     padding: 0;
     margin-bottom: 0px;
 }
- 
+.card h5{
+    color: #DC3545;
+}
+
+
 #title-container h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #82000a;
+    padding: 0;
+}
+
+#title-container h5 {
     font-size: 25px;
     font-weight: 600;
     color: #82000a;
